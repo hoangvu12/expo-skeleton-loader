@@ -189,6 +189,9 @@ const styles = {
 ## Todos
 1. Support more animation.
 
+## Playground
+You can easily play around with this package in [Snack](https://snack.expo.io/@nguyenvuzxc1/expo-skeleton-loader-example)
+
 ## Contributing
 
 You are welcome to contribute!
