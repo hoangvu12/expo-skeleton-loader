@@ -1,0 +1,4 @@
+./gitignore
+src/
+.expo
+.expo-shared

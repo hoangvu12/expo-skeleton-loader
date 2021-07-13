@@ -1,6 +1,25 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "allowJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "lib": ["ES6"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "ES6",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "outDir": "./lib",
+    "rootDir": "./src",
+    "jsx": "react-native"
+  },
+  "exclude": ["node_modules"]
 }
