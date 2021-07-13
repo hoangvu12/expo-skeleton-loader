@@ -2,6 +2,8 @@
 
 A simple component to show skeleton loading animation. Works in almost all platforms.
 
+> Currently only supports pulse animation.
+
 ## Preview
 
 <p align="center">
@@ -129,3 +131,16 @@ const styles = StyleSheet.create({
 | Prop  | Description                         | Type      | Default |
 | ----- | ----------------------------------- | --------- | ------- |
 | style | The style of component (View Style) | ViewStyle | `null`  |
+
+
+## Todos
+1. Support more animation.
+
+## Contributing
+
+You are welcome to contribute!
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
