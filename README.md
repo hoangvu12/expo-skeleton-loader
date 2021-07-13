@@ -103,6 +103,59 @@ const styles = StyleSheet.create({
 });
 ```
 
+### ⚠️ Warning
+**DO NOT USE `StyleSheet.create`. It won't return the style. Instead, use inline style or just create a plain object.**
+
+```js
+// Don't do this ❌
+const styles = StyleSheet.create({
+  container: {
+    width: CardWidth,
+    marginRight: CardPaddingRight,
+    marginBottom: 5,
+  },
+  thumbnail: {
+    width: CardWidth,
+    height: ImageHeight * ImageRatio,
+    marginBottom: 5,
+  },
+  title: {
+    height: TitleFontSize,
+    width: CardWidth * 0.7,
+    marginBottom: 5,
+  },
+  studios: {
+    height: StudiosFontSize,
+    width: CardWidth * 0.4,
+  },
+});
+```
+
+```js
+// Do this ✔
+const styles = {
+  container: {
+    width: CardWidth,
+    marginRight: CardPaddingRight,
+    marginBottom: 5,
+  },
+  thumbnail: {
+    width: CardWidth,
+    height: ImageHeight * ImageRatio,
+    marginBottom: 5,
+  },
+  title: {
+    height: TitleFontSize,
+    width: CardWidth * 0.7,
+    marginBottom: 5,
+  },
+  studios: {
+    height: StudiosFontSize,
+    width: CardWidth * 0.4,
+  },
+};
+```
+
 ## Props
 
 ### SkeletonLoader
@@ -124,7 +177,7 @@ const styles = StyleSheet.create({
 
 ### SkeletonLoader.Item
 
-> ⚠️ Warning: The style must includes height and weight in order to works
+**⚠️ Warning: The style must includes height and weight in order to works**
 
 > You can use any props of View component.
 
